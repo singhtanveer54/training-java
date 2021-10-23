@@ -1,0 +1,51 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="form.css"> 
+</head>
+<body><h2>Calculator</h2>
+
+    <div class="form1">
+        <form action="http://localhost:8080/add" method="POST" target="result">
+            <label class="edit_label">Addition</label>
+            <input class="form-text" type="number" name="number1" placeholder="Number 1">
+            
+            <input class="form-text" type="number" name="number2" placeholder="Number 2">
+            <button class="edit_number" type="submit">Add Number</button>
+            <iframe name="result" frameborder="0"></iframe>
+        </form>
+        
+        <br>
+        <br>
+        <form action="http://localhost:8080/subtract" method="POST" target="result1">
+            <label class="edit_label">Subtraction</label>
+            <input class="form-text" type="number" name="number1" placeholder="Number 1">
+            <input class="form-text" type="number" name="number2" placeholder="Number 2">
+            <button class="edit_number" type="submit">Subtract Number</button>
+            <iframe name="result1" frameborder="0"></iframe>
+        </form>
+        <br>
+        <br>
+        <form action="http://localhost:8080/multiply" method="POST" target="result2">
+            <label class="edit_label">Multiply</label>
+            <input class="form-text" type="number" name="number1" placeholder="Number 1">
+            <input class="form-text" type="number" name="number2" placeholder="Number 2">
+            <button class="edit_number" type="submit">Multiply Number</button>
+            <iframe name="result2" frameborder="0"></iframe>
+        </form>
+        <br>
+        <br>
+        <form action="http://localhost:8080/divide" method="POST" target="result3">
+            <label class="edit_label">Division
+            <input class="form-text" type="number" name="number1" placeholder="Number 1">
+            <input class="form-text" type="number" name="number2" placeholder="Number 2">
+            <button class="edit_number" type="submit">Divide Number</button>
+            <iframe name="result3" frameborder="0"></iframe>
+        </form>
+        <br>
+    </div>
+
+
+  </body></html>
